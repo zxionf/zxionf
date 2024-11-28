@@ -288,3 +288,17 @@ pre code {
   justify-content: flex-start;
   justify-content: flex-end,center,space-around,space-between;
 }
+.work{
+  margin-top: 30px;
+  border:2px solid red;
+  border-radius: 6px;
+  display:block;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.1);
+  color: #222;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.work a{
+  text-align: center;
+}
+
