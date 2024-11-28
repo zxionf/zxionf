@@ -37,3 +37,21 @@
     position: sticky;
     top:0;
 }
+.navderight{
+    margin-left: 120px;
+}
+
+.nav{
+    padding-top: 100px;
+}
+.nav a{
+    font-size: 0.6em;
+}
+.left{
+    padding-left: 20px;
+}
+.works a{
+    /* padding-top: 40px; */
+    margin-top: 40px;
+    padding-bottom: none;
+}
