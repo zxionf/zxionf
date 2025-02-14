@@ -1,0 +1,45 @@
+.typingline {
+    /* typing */
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    animation: ani-slide 5s steps(11) forwards infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.typingline::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 16px;
+    animation: ani-bling steps(2) infinite;
+}
+
+@keyframes ani-slide {
+    0% {
+        width: 0;
+    }
+
+    25% {
+        width: 11ch;
+    }
+
+    /* 50%{width: 11ch;} */
+    75% {
+        width: 11ch;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes ani-bling {
+    form {
+        border-right: 1px solid transparent;
+    }
+
+    to {
+        border-right: 1px solid #000;
+    }
+}

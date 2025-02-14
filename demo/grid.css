@@ -1,0 +1,55 @@
+
+.highlightgrid {
+    display: grid;
+    /* margin: 0 auto; */
+    width: 400px;
+    margin-top: 1em;
+    color: #f0f0f0f0;
+    background: black;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.highlightcard {
+    aspect-ratio: 4/3;
+    /* display: inline; */
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    /* transform: translate(100px,50px); */
+    border-radius: inherit;
+    position: relative;
+    overflow: hidden;
+    /* --x:30px;
+    --y:60px; */
+}
+
+.highlightcard::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* --x:30px;
+    --y:30px; */
+    /* background: yellow; */
+    background: radial-gradient(closest-side circle, rgba(255, 255, 255, 0.5), transparent);
+    transform: translate(var(--x), var(--y));
+    /* transform: translate(10px,30px); */
+}
+
+.group {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: flex-end, center, space-around, space-between;
+}
+
+.highlightinner{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    border-radius: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

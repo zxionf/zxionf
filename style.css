@@ -24,7 +24,6 @@
   background-color: rgba(0, 0, 0, 0.8);
   overflow-y: hidden;
   transition: 0.3s;
-
 }
 
 
@@ -118,32 +117,6 @@ main {
   display: block;
 }
 
-.typingline{
-  /* typing */
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  animation: ani-slide 5s steps(11) forwards infinite;
-  overflow: hidden;
-  white-space:nowrap;
-  position: relative;
-}
-.typingline::after{
-  content: '';
-  position: absolute;
-  right: 0;
-  height: 16px;
-  animation: ani-bling steps(2) infinite;
-}@keyframes ani-slide{
-  0%{width: 0;}
-  25%{width: 11ch;}
-  /* 50%{width: 11ch;} */
-  75%{width: 11ch;}
-  100%{width: 0;}
-}
-@keyframes ani-bling{
-  form{border-right:1px solid transparent;}
-  to{border-right: 1px solid #000;}
-}
-
 code {
   padding: 3px;
   padding-left: 6px;
@@ -222,52 +195,6 @@ pre code {
   }
 }
 
-.highlightgrid{
-  display: grid;
-  /* margin: 0 auto; */
-  width: 400px;
-  margin-top: 1em;
-  color: #f0f0f0f0;
-  background: black;
-  grid-template-columns: repeat(2,1fr);
-  gap: 10px;
-  text-align: center;
-  border-radius: 8px;
-  padding: 10px;
-}
-.highlightcard{
-  aspect-ratio: 4/3;
-  /* display: inline; */
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 8px;
-  /* transform: translate(100px,50px); */
-  border-radius: inherit;
-  position: relative;
-  overflow: hidden;
-  /* --x:30px;
-  --y:60px; */
-}
-.highlightcard::before{
-  content: '';
-  position: absolute;
-  inset: 0;
-  /* --x:30px;
-  --y:30px; */
-  /* background: yellow; */
-  background: radial-gradient(closest-side circle , rgba(255,255,255,0.5),transparent);
-  transform: translate(var(--x),var(--y));
-  /* transform: translate(10px,30px); */
-}
-.highlightinner{
-  position: absolute;
-  inset: 4px;
-  background: #222;
-  border-radius: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .textmix{
   background: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
@@ -283,11 +210,6 @@ pre code {
   float: left;
 }
 
-.group{
-  display: flex;
-  justify-content: flex-start;
-  justify-content: flex-end,center,space-around,space-between;
-}
 .work{
   margin-top: 30px;
   border:2px solid red;
@@ -302,3 +224,45 @@ pre code {
   text-align: center;
 }
 
+.spanimport {
+  border: 4px solid black;
+  background: yellow;
+  border-radius: 10px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/***demos******************************************************/
+.demos{
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+.demos ul{
+  list-style-type: none; /* 移除默认的列表样式 */
+  margin: 0; /* 移除列表的边距 */
+  padding: 0; /* 移除列表的填充 */
+}
+.demos ul ls{
+  list-style-type: none; /* 移除默认的列表样式 */
+}
+.demos ul li a{
+  color: black;
+  text-decoration: none; /* 移除下划线 */
+  padding: 5px 5%; /* 内边距 */
+  display: block;
+  transition: background-color 0.3s; /* 添加过渡效果 */
+}
+.demos ul li a:active{
+  background-color: #575757; /* 鼠标悬停时的背景颜色 */
+  border-radius: 10px; /* 圆角 */
+}
+.demos ul li a:hover{
+  background-color: #57575733; /* 鼠标悬停时的背景颜色 */
+  border-radius: 10px; /* 圆角 */
+}
+.demos ul li a:visited{
+  color:purple;
+}
+.demos ul li a:link{
+  border-radius: 10px;
+}
