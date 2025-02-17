@@ -27,3 +27,10 @@ function rmspace(str) {
     }
     return trimStr;
 }
+function goto(where){
+    console.log(where);
+    if(window.location.href.match("zxionf.github.io/zxionf"))
+        window.location.href = "/zxionf/"+where;
+    else
+        window.location.href = where;
+}
