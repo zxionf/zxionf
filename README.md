@@ -1,1 +1,1 @@
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=zxionf&count_private=true&theme=dracula&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=zxionf&count_private=true&layout=compact)
